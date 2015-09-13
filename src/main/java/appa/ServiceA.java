@@ -11,7 +11,12 @@ public class ServiceA implements IServiceA {
 
 	@Override
 	public int plus(int left, int right) {
-		return left + right;
+		
+		int result = left + right;
+		
+		System.out.println("method=plus, left="+left + ", right=" + right + ", result=" + result);
+		
+		return result;
 	}
 
 }
